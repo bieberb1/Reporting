@@ -1,0 +1,27 @@
+project:
+  type: website
+  #Output to a folder name GitHub expects
+  output-dir: docs
+
+website:
+  title: "Quarto website hosted on GitHub example"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
+#Added per 'R for the Rest of Us' instructions
+execute:
+  echo: true
+  warning: false
+  message: false
+
